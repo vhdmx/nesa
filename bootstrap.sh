@@ -432,7 +432,7 @@ get_wsl_info() {
 
 detect_hardware_capabilities() {
 check_memory_usage() { 
-     max_ram="4G"
+     max_ram="6G"
      used_ram=$(free -h | grep Mem | awk '{print $3}')
 
      if [[ $used_ram > $max_ram ]]; then
